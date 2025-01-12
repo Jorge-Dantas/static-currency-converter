@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Compatibilidade com IE/EDGE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="./styles.css" rel="stylesheet"> <!--Define o CSS externo que será
+        aplicado na página-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Convert Money | Jorge Dantas 2024.1</title>
+  
+</head>
+
+<body>
+    <img class="logoGif" src="./assets/Conversor de moedas - Jorge Dantas.gif" alt="Logo - convert money">
+
+    <main>
+
+        <label for="moedaOrigem">Converter <b>de</b>:
+            <select id="moedaOrigem">
+                <option value="Real"><b>R$</b> Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label for="moedaDestino">Converter <b>Para</b>:
+            <select id="moedaDestino">
+                <option value="Dolar"><b>U$</b> Dólar Americano</option>
+                <option value="Euro"><b>€</b> Euro</option>
+        </label>
+
+        <label for=""> Valor: 
+            <input class="entradaMoeda" type="text" placeholder="R$ 10.000">
+        </label>
+
+        <button id="btID" class="btConverter">Converter</button>
+    
+
+    <section>
+        <div class="moedaCaixa">
+            <img id="imgPaisUm" src="./assets/moeda-brasil.png" alt="Moeda Brasileira - Real">
+            <p class="moedaPaisUm">Real</p>
+            <p class="valorMoedaAconverter">R$ 0,00</p>
+        </div>
+
+        <img class="seta" src="./assets/seta-para-baixo.png" alt="Seta para baixo">
+
+        <div class="moedaCaixa">
+            <img id="imgPaisDois" src="./assets/moeda-usa.png" alt="Moeda Dólar Americano">
+            <p class="moedaPaisDois">Dólar Americano</p>
+            <p class="valorMoeda">U$ 0.00</p>
+        </div>
+    </section>
+
+    </main>
+
+</body>
+
+<!--Usando caminho relativo para funcionar no Github pages..-->
+<script src="./scripts.js"></script>
+
+</html>
