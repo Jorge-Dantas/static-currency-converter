@@ -8,7 +8,7 @@ const imgPaisOne = document.querySelector("#imgPaisUm")
 const imgPaisTwo = document.querySelector("#imgPaisDois")
 
 function converteValores(){
-    /*Mapeando o que o user digita no input e guardando em valorEntradaMoeda */
+    /*Mapeando o que o usuário digita no input e guardando em valorEntradaMoeda */
     const valorEntradaMoeda = document.querySelector(".entradaMoeda").value
 
     /*Definindo valor de dólar e euro e fazendo a lógica da conversão.
@@ -19,7 +19,7 @@ function converteValores(){
     
     /*Mapeando a classe valorMoedaAconverter e guardando em varMoedaAconverter.
     Fazendo o mesmo para valorMoeda com varMoedaConvertida. Ambos são os textos com
-    os valores das moedas que estão sendo convertidas no momento.*/
+    os valores das moedas que serão convertidas no momento.*/
     const varMoedaAconverter = document.querySelector(".valorMoedaAconverter")
     const varMoedaConvertida = document.querySelector(".valorMoeda")
 
@@ -27,10 +27,9 @@ function converteValores(){
     
 
      /*Colocando o que o usuário digitou (valorEntradaMoeda) em varMoedaAconverter.
-    O Intl.NumberFormat é uma biblioteca JavaScript que permite formatação de números,
+    O Intl.NumberFormat é uma biblioteca js que permite formatação de números,
     datas, e muito mais. Você precisa criar uma instância e pode passar as configurações
-    de sua formatação como parâmetros. A sintaxe original é:
-        new Intl.NumberFormat([locales[, options]]) */
+    da formatação como parâmetros. A sintaxe original é: new Intl.NumberFormat([locales[, options]])*/
     if(selectMoedaOrigem.value == "Real" && selectMoedaDestino.value == "Dolar"){
         
     varMoedaConvertida.innerHTML = new Intl.NumberFormat("en-US", {
